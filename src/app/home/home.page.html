@@ -1,0 +1,16 @@
+<div class="fundo">
+    <div class="conteudo" [class.puff-in-center]="animacao">
+
+
+        <div class="frase">{{frase}}</div>
+        <div class="autor">—{{autor}}</div>
+    </div>
+</div>
+
+<ion-fab slot="fixed" vertical="bottom" horizontal="end">
+    <ion-fab-button (click)="solicitarFrase()">
+    <ion-icon name="refresh">
+
+    </ion-icon>
+    </ion-fab-button>
+</ion-fab>

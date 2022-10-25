@@ -1,0 +1,46 @@
+@import url();
+.fundo {
+  background: url(http://picsum.photos/600/1200/?blur)
+  center no-repeat,
+  linear-gradient(to bottom, #12c2e9, #c471ed, #f64f59);
+  background-blend-mode: overlay;
+  height: 100vh; // virtual height
+  display: flex;
+  align-items: center;
+
+ 
+}
+
+.conteudo {
+  font-family: 'Indie Flower', cursive;
+  background-color: #fffb;
+  //# 0 - F
+  //rgb - red green blue
+  //rgba - red green blue alpha
+  margin: 0 24px;
+  padding:  18px;
+  border-radius: 16px;
+}
+.frase{
+font-size: 30px;
+}
+.autor{
+  font-size: 24px;
+  font-weight: bold;
+  text-align: end;
+}
+.puff-in-center {
+	animation: puff-in-center 0.7s cubic-bezier(0.470, 0.000, 0.745, 0.715) both;
+}
+ @keyframes puff-in-center {
+  0% {
+    transform: scale(2);
+    filter: blur(4px);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
